@@ -29,7 +29,7 @@ bot = Client('Doodstream bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi, {message.chat.first_name} !!**\n\n"
-        "**I am your Personal MDisk Bot 🤗, Made by @GreyMatter_bots💞 Send me a MDisk Post to see the Magic 😅**")
+        "**ɪ ᴀᴍ ꜱɪᴍᴘʟᴇ ᴀᴜᴛᴏ ᴍᴅɪꜱᴋ ᴄᴏɴᴠᴇʀᴛᴇʀ ʙᴏᴛ . ꜱᴇɴᴅ /ꜱᴛᴀʀᴛ ᴛᴏ ᴍᴀɢɪᴄ ✨ & ᴍʏ ᴘᴏᴡᴇʀ..**")
     
 @bot.on_message(filters.text & filters.private)
 async def Doodstream_uploader(bot, message):
@@ -47,7 +47,7 @@ async def Doodstream_uploader(bot, message):
 @bot.on_message(filters.photo & filters.private)
 async def Doodstream_uploader(bot, message):
     new_string = str(message.caption)
-    conv = await message.reply("Ruko jara Sabar kro ✋")
+    conv = await message.reply("ʟᴏᴀᴅɪɴɢ")
     dele = conv["message_id"]
     try:
         Doodstream_link = await multi_Doodstream_up(new_string)
